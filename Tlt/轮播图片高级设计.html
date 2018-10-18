@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * 
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            color: red;
+            font-family: "华文新魏";
+            font-size: 36px;
+        }
+
+        div 
+        {
+            display: block;
+        }
+
+        .head 
+        {
+            margin: 0 auto;
+            overflow: hidden;
+            width: 960px;
+        }
+
+        .headsection 
+        {
+            width: 100%;
+            height: 360px;
+            margin: 10px auto 0;
+        }
+
+        .centre 
+        {
+            height: 320px;
+            width: 680px;
+            margin: 40px auto 0;
+            border: 5px solid #eaeaea;
+            overflow: visible;
+            position: relative;
+            background-color: black;
+        }
+
+        .interio 
+        {
+            overflow: hidden;
+            height: 320px;
+        }
+
+        ul 
+        {
+            list-style: none;
+        }
+        .centre .interio ul
+        {
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .centre .interio li
+        {
+           width: 680px;
+           height: 320px;
+           position: absolute;
+           top: -325px;
+           list-style: none;
+        }
+        .centre .interio li img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        .interio li:first-child{
+			top: 0;
+		}
+        .interio li:nth-child(1) {
+			animation: cycle 40s linear infinite;
+		}
+
+		.interio li:nth-child(2) {
+			animation: cycletwo 40s linear infinite;
+		}
+        .interio li:nth-child(3) {
+			animation: cyclethree 40s linear infinite;
+		}
+
+		.interio li:nth-child(4) {
+			animation: cyclefour 40s linear infinite;
+		}
+
+		.interio li:nth-child(5) {
+			animation: cyclefive 40s linear infinite;
+		}
+        @keyframes cycle {
+			0%  {top: 0px;}
+			4%  {top: 0px;}
+			16% {top: 0px; opacity: 1; z-index: 0;} 
+			20% {top: 325px; opacity: 0; z-index: 0;}
+			21% {top: -325px; opacity: 0; z-index: -1;}
+			50% {top: -325px; opacity: 0; z-index: -1;}
+			92% {top: -325px; opacity: 0; z-index: 0;}
+			96% {top: -325px; opacity: 0;}
+			100%{top: 0px; opacity: 1;}
+		}
+
+		@keyframes cycletwo {
+			0%  {top: -325px; opacity: 0;}
+			16% {top: -325px; opacity: 0;}
+			20% {top: 0px; opacity: 1;}
+			24% {top: 0px; opacity: 1;} 
+			36% {top: 0px; opacity: 1; z-index: 0;} 
+			40% {top: 325px; opacity: 0; z-index: 0;}
+			41% {top: -325px; opacity: 0; z-index: -1;}  
+			100%{top: -325px; opacity: 0; z-index: -1;}
+		}
+        @keyframes cyclethree {
+			0%  {top: -325px; opacity: 0;}
+			36% {top: -325px; opacity: 0;}
+			40% {top: 0px; opacity: 1;}
+			44% {top: 0px; opacity: 1;} 
+			56% {top: 0px; opacity: 1; z-index: 0;} 
+			60% {top: 325px; opacity: 0; z-index: 0;} 
+			61% {top: -325px; opacity: 0; z-index: -1;}
+			100%{top: -325px; opacity: 0; z-index: -1;}
+		}
+
+		@keyframes cyclefour {
+			0%  {top: -325px; opacity: 0;}
+			56% {top: -325px; opacity: 0;}
+			60% {top: 0px; opacity: 1;}
+			64% {top: 0px; opacity: 1;}
+			76% {top: 0px; opacity: 1; z-index: 0;}
+			80% {top: 325px; opacity: 0; z-index: 0;}
+			81% {top: -325px; opacity: 0; z-index: -1;}
+			100%{top: -325px; opacity: 0; z-index: -1;}
+		}
+
+		@keyframes cyclefive {
+			0%  { top:-325px; opacity:0; }
+			76% { top:-325px; opacity:0; }
+			80% { top:0px; opacity:1; }
+			84% { top:0px; opacity:1; }
+			96% { top:0px; opacity:1; z-index:0; }
+			100%{ top:325px; opacity:0; z-index:0; }
+		}
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="headsection">
+            <div class="centre">
+                <div class="interio">
+                    <ul>
+
+                        <li class="sign-a">
+                            <a href="#">
+                                <img src="http://p3.so.qhimgs1.com/bdr/_240_/t01d3cc36f2aedb9da3.jpg" alt="">
+                            </a>
+                            <div>
+                                <h1>仓鼠</h1>
+                            </div>
+                        </li>
+
+                        <li class="sign-a">
+                            <a href="#">
+                                <img src="http://p4.so.qhmsg.com/bdr/_240_/t01dbe7669367f7e589.jpg" alt="">
+                            </a>
+                            <div>
+                             <h1>猫咪</h1>
+                            </div>
+                       </li>
+
+                       <li class="sign-a">
+                            <a href="#">
+                                <img src="http://p5.so.qhimgs1.com/bdr/_240_/t0190174c7fbcca49eb.jpg" alt="">
+                            </a>
+                            <div>
+                                <h1>一家人</h1>
+                            </div>
+                        </li> 
+
+                        <li class="sign-a">
+                            <a href="#">
+                                <img src="http://p0.so.qhimgs1.com/bdr/_240_/t012a3a18866d5bafe0.jpg" alt="">
+                            </a>
+                            <div>
+                                <h1>猫主子</h1>
+                            </div>
+                        </li> 
+
+                        <li class="sign-a">
+                             <a href="#">
+                                <img src="http://p2.so.qhimgs1.com/bdr/_240_/t015a7f6e95a45c33b2.jpg" alt="">
+                             </a>
+                            <div>
+                                <h1>Say what</h1>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="insert"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
