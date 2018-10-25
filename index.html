@@ -8,17 +8,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
+    <style type="text/css">
+    *
+    {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        font-family: "微软雅黑";
+        font-size: 20px;
+       /* 华文行楷 */
+    }
+    .new
+    {
+        width: 980px;
+        height: 28px;
+        border: 1px inset red;
+        margin: 10px 0;
+        background-color: red;
+        padding-left: 40%;
+    }
+    dl
+    {
+        display: none;
+    }
+    .interlinkage
+    {
+        padding-right: 30px;
+        color: aliceblue;
+        line-height: 28px;
+    }
+    dl
+    {
+        
+        /* margin-top: 2%; */
+        width: 100%;
+        text-align: center;
+    }
+    dl dt
+    {
+        font-family: "华文行楷";
+        font-size: 35px;
+        color: red;
+    }
+    dl dd
+    {
+        padding: 10px 0;
+        width: 100%;
+        height: 10px;
+        border: 1px inset red;
+        line-height: 10px;
+        background-color: beige;
+    }
+    dl dd a
+    {
+        color: black;
+    }
+    :target
+    {
+        display:block;
+       
+    }
+    </style>
 </head>
 
 <body>
-    <li>
-        <a href="../Clt/C1.html">Clt</a>
-        <a href="../Dlt/D1.html">Dlt</a>
-        <a href="../My-project/Tlt/轮播图片高级设计.html">2018.10.18作业</a>
-        <a href="../My-project/Plt/formpattern.html">2018.10.18猴版表单样式作业</a>
-        <a href="../My-project/Nlt/Flex Box.html">2018.10.22弹性盒子(Flex Box)作业</a>
-        <a href="../My-project/Qlt/number-guessing-game.html">2018.10.23JAVA</a>
-    </li>
+    <div>
+        <div class="new">
+            <nav>
+               <a href="#signA" class="interlinkage">课后作业</a>
+               <a href="#signB" class="interlinkage">随堂练习</a>
+               <a href="#signC" class="interlinkage">课堂作业</a>
+            </nav>
+        </div>
+
+       <dl id="signA">
+           <dt>课后作业</dt>
+           <dd><a href="../My-project/Tlt/轮播图片高级设计.html">2018.10.18作业</a></dd>
+           <dd><a href="../My-project/Plt/formpattern.html">2018.10.18猴版表单样式作业</a></dd>
+           <dd><a href="../My-project/Nlt/Flex Box.html">2018.10.22弹性盒子(Flex Box)作业</a></dd>
+           <dd><a href="../My-project/Qlt/number-guessing-game.html">2018.10.23JAVASCRIPT作业</a></dd>  
+       </dl>
+
+       <dl id="signB">
+           <dt>随堂练习</dt>
+            <dd><a href="../Clt/C1.html">Clt测试链接转换</a></dd>
+            <dd><a href="../Dlt/D1.html">Dlt测试链接转换</a></dd>
+       </dl>
+
+       <dl id="signC">
+           <dt>课堂作业</dt>
+           <dd><a href=""></a></dd>
+       </dl>
+
+
+    </div>
 </body>
 
 </html>
