@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box li {
+            width: 450px;
+            line-height: 30px;
+            border-bottom: 1px dashed #ccc;
+            margin-left: 80px;
+        }
+
+        .box li a {
+            float: right;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var newbut = document.getElementById("newbutton");
+            var newarea = document.getElementById("newarea");
+
+            var newUL = document.createElement("ul");
+            newbut.parentNode.appendChild(newUL);
+
+            newbut.onclick = function () {
+                var newLI = document.createElement("li");
+                if (newarea.value == "") {
+                    window.alert("您输入的内容不能为空!");
+                    return false;
+                }
+                newLI.innerHTML = newarea.value;
+                var newa = document.createElement("a");
+                newa.href = "#";
+                newa.innerHTML = "删除";
+                newa.onclick = function () {
+                    newUL.removeChild(this.parentNode);
+                }
+                newLI.appendChild(newa);
+                if (newUL.hasChildNodes()) {
+                    newUL.insertBefore(newLi, newUL.firstChild);
+                    console.log(newUL.childNodes)}
+                else newUL.appendChild(newLI);
+                newarea.value = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="box" id="newdiv">
+        <textarea name="" id="newarea" cols="30" rows="10" autofocus></textarea><button id="newbutton">发布</button>
+
+    </div>
+</body>
+
+</html>
