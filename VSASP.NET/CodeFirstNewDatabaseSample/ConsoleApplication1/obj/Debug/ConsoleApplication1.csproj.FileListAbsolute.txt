@@ -1,0 +1,10 @@
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\EntityFramework.dll
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\EntityFramework.xml
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+E:\VS2015\新建文件夹\CodeFirstNewDatabaseSample\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
