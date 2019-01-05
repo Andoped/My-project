@@ -1,0 +1,35 @@
+﻿@model WebApplication1.ViewModels.EmployeeListViewModel
+
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>@Model.UserName,@Model.Greeting</h2>
+    <form action="/employee/Inquire" method="post">
+        查询：<input type="text" name="searchString">
+    <input type="submit" value="查询">
+</form>    
+    @*<p><a href="/employee/addNew">新增</a>*@  @Html.ActionLink("新增", "addNew", "employee")</p>
+    <div> 
+        <ul>
+            @foreach (var item in Model.EmployeeViewList)
+            {
+                <li>@Html.DisplayNameFor(modelItem=>item.EmployeeName) @item.EmployeeName,&emsp;
+                    @Html.DisplayNameFor(modelItem => item.EmployeeSalary) @item.EmployeeSalary,&emsp;
+                    @Html.DisplayNameFor(modelItem => item.EmployeeGrade) @item.EmployeeGrade &emsp;
+                    <a href="/employee/delete/@item.EmployeeID">删除</a>
+                    @*@Html.ActionLink("删除", "delete", "employee",new { id = item.EmployeeID }) &emsp;*@
+                    <a href="/employee/Update/@item.EmployeeID">更改</a></li>
+            }
+        </ul>
+    </div>
+</body>
+</html>

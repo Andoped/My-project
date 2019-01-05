@@ -1,0 +1,23 @@
+﻿@model WebApplication1.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AlterEmployee</title>
+</head>
+<body>
+    <div> 
+        <form action="/employee/Updates" method="post">
+            要更新的姓名：<input type="text" name="Name" value="@Model.Name">
+            要更新的工资：<input type="text" name="Salary" value="@Model.Salary">
+            <input type="hidden" name="EmployeeID"value="@Model.EmployeeID">
+            <input type="submit" value="更新"><input type="reset" value="重置">
+        </form>    
+    </div>
+</body>
+</html>
