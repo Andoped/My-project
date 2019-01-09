@@ -193,3 +193,4 @@ E:\VS2015\老师的MVC\WebApplication1\WebApplication1\bin\zh-Hans\System.Web.We
 E:\VS2015\老师的MVC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 E:\VS2015\老师的MVC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 E:\VS2015\老师的MVC\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+I:\VS2015\老师的MVC\WebApplication1\WebApplication1\bin\zh-Hans\EntityFramework.SqlServer.resources.dll

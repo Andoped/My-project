@@ -4,3 +4,15 @@ D:\webSite\45MVC\WebApplication1\ConsoleApplication1\bin\Debug\ConsoleApplicatio
 D:\webSite\45MVC\WebApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
 D:\webSite\45MVC\WebApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
 D:\webSite\45MVC\WebApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\EntityFramework.dll
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.dll
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\EntityFramework.xml
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\EntityFramework.SqlServer.xml
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\zh-Hans\EntityFramework.resources.dll
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+I:\VS2015\老师的MVC\WebApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

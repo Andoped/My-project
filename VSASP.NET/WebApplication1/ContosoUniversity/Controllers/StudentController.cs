@@ -21,14 +21,14 @@ namespace ContosoUniversity.Controllers
         {
             ViewBag.CurrentSort = sortOrder;
             //sortOrder接受排序参数，根据sortOrder值改变下一次排序的参数值
-            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "n0";
             ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
             if (searchString != null)
             {
                 page = 1;
             }
             else
-            {
+             {
                 searchString = currentFilter;
             }
 
