@@ -1,0 +1,66 @@
+﻿@using WebApplication1.Models
+@model Weather
+
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=EZYRNAvE8yktGxgNOen9vgSL9XfdMk9e"></script>
+<div class="jumbotron">
+    <h1>17级软件技术2班</h1>
+    <p class="lead">教程</p>
+    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+<h3>@Model.City 今天天气</h3>
+<ul>
+    <li>建议着:@Model.Dressing_advice</li>
+    <li>湿度:@Model.Temperature</li>
+    <li>天气:@Model.Dressing_index</li>
+    <li>星期:@Model.Week</li>
+</ul>
+
+
+
+<h3 id="city"></h3>
+<ul>
+    <li id="temperature"></li>
+    <li id="humidity"></li>
+    <li id="Wind_direction"></li>
+    
+</ul>
+
+<script type="text/javascript">
+    // 百度地图API功能
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function (r) {
+        if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+
+            console.log(r.address.city);
+            //拿到地址后获取城市天气
+            var ajax = new XMLHttpRequest();
+            ajax.open("POST", "../Home/Getweatcher", true);
+            ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            ajax.send("city=" + r.address.city);
+            ajax.responseType = "json";
+            ajax.onload = function () {
+                if (ajax.status === 200) {
+                    json = ajax.response;
+                    document.querySelector("#city").textContent = json.City;
+                    document.querySelector("#temperature").textContent = json.Temperature;
+                    document.querySelector("#humidity").textContent = json.Humidity;
+                    document.querySelector("#Wind_direction").textContent = json.Wind_direction;
+                    console.log(r.address.city);
+                } else {
+                    //  如果获取文件失败，则向控制台提供错误信息
+                    console.log('网络请求carts.json失败，响应吗' +ajax.status + ': ' + ajax.statusText)
+                }
+            }
+
+
+        }
+        else {
+            console.log("定位失败");
+        }
+    }, { enableHighAccuracy: true })
+</script>
+
